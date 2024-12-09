@@ -12,7 +12,7 @@ Clone the repository or download source code files.
 ## Inputs
 ### 1. Training Dataset
 * train_X
-  - Contains the gene expression profiles for the training dataset
+  - Contains the gene expression profiles for the training dataset in the csv-formatted file
   - Row : Sample, Column : Feature (Gene)
   - Shouldn't contain any sample_id column
   - If the user has spatial location information for each cell/spot, please make sure there are two columns with "array_row" and "array_col", representing the integer coordinates of row and column, respectively
@@ -24,14 +24,14 @@ A1BG,A1CF,...,A2ML1,array_row,array_col
 ```
 
 * train_Y
-  - Contains the integer-converted cell type information for the training dataset
+  - Contains the integer-converted cell type information for the training dataset in the csv-formatted file
   - The order of cell type should be same as **train_X**
   - The cell type label should always be in sequential format starting from 0
   - For example, if there are 5 cell types, each should be denoted as 0, 1, 2, 3, 4.
  
 ### 2. Testing Dataset
 * test_X
-  - Contains the gene expression profiles for the testing dataset
+  - Contains the gene expression profiles for the testing dataset in the csv-formatted file
   - Row : Sample, Column : Feature (Gene)
   - Shouldn't contain any sample_id column
   - If the user has spatial location information for each cell/spot, please make sure there are two columns with "array_row" and "array_col", representing the integer coordinates of row and column, respectively

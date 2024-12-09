@@ -222,5 +222,5 @@ max_res_pred = test_classifier(test_dataloader, model, criterion)
 
 
 max_res_pred = max_res_pred.detach().cpu().numpy()
-np.savetxt(os.path.join(result_dir, "pred_group_" + group_num + ".csv"), max_res_pred, fmt="%.0f", delimiter=",")
+np.savetxt("prediction".csv", max_res_pred, fmt="%.0f", delimiter=",")
 
